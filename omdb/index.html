@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>myGive</title>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="cookies.js"></script>
+    <script src="omdb.js"></script>
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="">
+</head>
+
+<body>
+    <h1>hi hi testing local server hi hi</h1>
+    <hr>
+<!--     <form onsubmit="return validateForm()">
+        Name:
+        <br>
+        <input id="name" type="text" name="fullname">
+        <br>
+        <input style="margin-top:20px; width:130px" type="submit" value="Submit">
+    </form>
+    <form onsubmit="return deleteAllCookies()">
+        <input style="margin-top:20px; width:130px" type="submit" value="Delete Cookies">
+    </form> -->
+    <br>
+    <form id="search">
+        <input type="text" name="t" placeholder="name" onkeyup="lookup()">
+        <!--         <input type="text" name="type" placeholder="type">
+ -->
+        <input type="Submit">
+    </form>
+    <div id="images">
+    </div>
+    <h2 id="movie-title">Movie Title</h2>
+    <img id="poster" />
+</body>
+
+</html>
