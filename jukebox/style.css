@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background-color: lightgreen;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    color: black;
+}
+
+main {
+    margin-top: 100px;
+}

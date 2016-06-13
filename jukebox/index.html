@@ -1,0 +1,44 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jukeBox</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <h2 id="link">http://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3</h1>
+        <audio id="player">
+            <source id="source" src="http://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mp3">
+        </audio>
+        <br>
+        <button type="button" onclick="jb.stop()">
+            <i class="fa fa-stop" aria-hidden="true"></i>
+        </button>
+        <button type="button" onclick="jb.play()">
+            <i id="pp" class="fa fa-play" aria-hidden="true"></i>
+        </button>
+        <button type="button" onclick="jb.next()">
+            <i class="fa fa-forward" aria-hidden="true"></i>
+        </button>
+        <br>
+        <form id="change" style="padding-top:50px">
+            <input style="width:400px" id="path" type="text" placeholder="type the file path or URL to your song here.." required>
+            <button type="button" onclick="jb.changeSong()">
+                <i class="fa fa-link" aria-hidden="true"></i>
+            </button>
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
